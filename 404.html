@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>buk1t • not found</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="name">buk1t</span>
+          <span class="hint">404</span>
+        </a>
+        <nav class="nav">
+          <a class="pill" href="/apps/">Apps</a>
+          <a class="pill" href="/contact/">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h1>Not found</h1>
+        <p>That page doesn’t exist here.</p>
+      </section>
+
+      <section class="section">
+        <div class="notice">
+          Try <a href="/apps/">Apps</a> or go back <a href="/">home</a>.
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> buk1t</div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
+  </body>
+</html>

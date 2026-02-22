@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>buk1t • apps</title>
+    <meta name="description" content="Apps in the buk1t ecosystem." />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="name">buk1t</span>
+          <span class="hint">apps</span>
+        </a>
+        <nav class="nav">
+          <a class="pill" href="/apps/">Apps</a>
+          <a class="pill" href="/about/">About</a>
+          <a class="pill" href="/contact/">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h1>Apps</h1>
+        <p>
+          Stable apps + experimental spaces. Ships separately when it earns it.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Directory</h2>
+          <div class="meta" id="apps-meta">Loading…</div>
+        </div>
+
+        <div class="grid" id="apps-grid"></div>
+
+        <div
+          class="notice"
+          id="apps-notice"
+          style="display: none; margin-top: 12px"
+        ></div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> buk1t</div>
+        <div id="footer-links"></div>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/pages/apps.js"></script>
+  </body>
+</html>

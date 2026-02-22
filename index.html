@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>buk1t</title>
+    <meta name="description" content="A personal internet system." />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="name">buk1t</span>
+          <span class="hint" id="tagline">a personal internet system</span>
+        </a>
+        <nav class="nav">
+          <a class="pill" href="/apps/">Apps</a>
+          <a class="pill" href="/about/">About</a>
+          <a class="pill" href="/contact/">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Identity / What is Buk1t -->
+      <section class="hero">
+        <h1 id="hero-title">What is Buk1t?</h1>
+        <p id="hero-sub">
+          A collection of small, fast pages that (hopefully) do useful things.
+        </p>
+      </section>
+
+      <!-- Philosophy -->
+      <section class="section" id="philosophy-section" style="margin-top: 12px">
+        <div class="section-head">
+          <h2 id="philosophy-title">Design rule</h2>
+          <div class="meta" id="updated">Loading…</div>
+        </div>
+
+        <div class="notice" id="philosophy-body">Less is more.</div>
+      </section>
+
+      <!-- Featured -->
+      <section class="section" id="featured-section">
+        <div class="section-head">
+          <h2>Featured</h2>
+          <div class="meta">Top projects</div>
+        </div>
+        <div class="grid" id="featured-grid"></div>
+      </section>
+
+      <!-- What's new / Now -->
+      <section class="section">
+        <div class="section-head">
+          <h2>What’s new</h2>
+          <div class="meta">Right now</div>
+        </div>
+
+        <div class="grid" id="now-grid"></div>
+
+        <div
+          class="notice"
+          id="notice"
+          style="display: none; margin-top: 12px"
+        ></div>
+      </section>
+
+      <!-- Coming next -->
+      <section class="section" id="future-section">
+        <div class="section-head">
+          <h2>Coming next</h2>
+          <div class="meta">Future ideas</div>
+        </div>
+        <div class="grid" id="future-grid"></div>
+      </section>
+
+      <footer class="footer">
+        <div id="footer-left">© <span id="year"></span> buk1t</div>
+        <div id="footer-links"></div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/pages/main.js"></script>
+  </body>
+</html>

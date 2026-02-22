@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/apps", "destination": "/apps/" },
+    { "source": "/about", "destination": "/about/" },
+    { "source": "/contact", "destination": "/contact/" },
+    { "source": "/status", "destination": "/status/" }
+  ]
+}
