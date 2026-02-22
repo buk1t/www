@@ -4,32 +4,119 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>buk1t • about</title>
-    <meta name="description" content="About buk1t." />
+    <meta name="description" content="About Beckett." />
     <link rel="stylesheet" href="/css/app.css" />
   </head>
   <body>
     <div class="wrap">
-      <header class="topbar">
-        <a class="brand" href="/">
-          <span class="name">buk1t</span>
-          <span class="hint">about</span>
-        </a>
-        <nav class="nav">
-          <a class="pill" href="/apps/">Apps</a>
-          <a class="pill" href="/about/">About</a>
-          <a class="pill" href="/contact/">Contact</a>
-        </nav>
-      </header>
+      <div id="topbar" data-hint="about"></div>
 
-      <section class="hero">
-        <h1>About</h1>
-        <p>A small ecosystem of tools & experiments.</p>
+      <!-- Personal hero -->
+      <section class="hero hero-landing">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>Beckett</h1>
+            <p>
+              Seattle-based Gen Z coder building small web tools — and trying to
+              stay curious about everything.
+            </p>
+
+            <div class="hero-meta">
+              <span class="meta">music • outdoors • politics • code</span>
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <div class="glass">
+              <div class="kicker">Currently</div>
+              <div class="quote">
+                Learning how to build things that are calm, fast, and actually
+                useful.
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <!-- Who I am -->
       <section class="section">
-        <div class="notice">
-          This page can stay static, or we can pull “about” content from the
-          same JSON later.
+        <div class="section-head">
+          <h2>Who I am</h2>
+          <div class="meta">outside the screen</div>
+        </div>
+
+        <div class="grid">
+          <div class="card span-6">
+            <div class="card-top">
+              <h3 class="card-title">Music</h3>
+              <span class="badge">life</span>
+            </div>
+            <p class="card-desc">
+              I’m into indie and alternative music, rock, and local festivals. I
+              play flute and want to learn more instruments. Music is probably
+              the most consistent thing in my life.
+            </p>
+          </div>
+
+          <div class="card span-6">
+            <div class="card-top">
+              <h3 class="card-title">Outdoors</h3>
+              <span class="badge">calm</span>
+            </div>
+            <p class="card-desc">
+              I like hiking, canoeing, camping etc. Pretty much anything gets me
+              outside and breathing fresh air.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What I care about -->
+      <section class="section">
+        <div class="section-head">
+          <h2>What I care about</h2>
+          <div class="meta">interests</div>
+        </div>
+
+        <div class="grid">
+          <div class="card span-6">
+            <div class="card-top">
+              <h3 class="card-title">Politics & systems</h3>
+              <span class="badge">big picture</span>
+            </div>
+            <p class="card-desc">
+              I’m interested in how systems work. I am majoring policy and spend
+              my job reasearching on how federal, state, and municipal policy
+              affects everyday citizens.
+            </p>
+          </div>
+
+          <div class="card span-6">
+            <div class="card-top">
+              <h3 class="card-title">Design & code</h3>
+              <span class="badge">small picture</span>
+            </div>
+            <p class="card-desc">
+              I like building things that feel cohesive. Clean UI, simple
+              structure, and fewer moving parts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Buk1t exists (short, not dominant) -->
+      <section class="section">
+        <div class="section-head">
+          <h2>Why I built Buk1t</h2>
+          <div class="meta">context</div>
+        </div>
+
+        <div class="card span-12">
+          <p class="card-desc">
+            Buk1t started as a way to organize my projects without feeling
+            overwhelmed. It’s grown into a small ecosystem of apps that I
+            control end-to-end. It’s less about scale and more about clarity.
+          </p>
         </div>
       </section>
 
@@ -39,6 +126,7 @@
       </footer>
     </div>
 
+    <script type="module" src="/js/core/boot.js"></script>
     <script type="module" src="/js/pages/about.js"></script>
   </body>
 </html>

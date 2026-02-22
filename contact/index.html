@@ -4,37 +4,88 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>buk1t • contact</title>
-    <meta name="description" content="Contact buk1t." />
+    <meta name="description" content="Contact Beckett." />
     <link rel="stylesheet" href="/css/app.css" />
   </head>
   <body>
     <div class="wrap">
-      <header class="topbar">
-        <a class="brand" href="/">
-          <span class="name">buk1t</span>
-          <span class="hint">contact</span>
-        </a>
-        <nav class="nav">
-          <a class="pill" href="/apps/">Apps</a>
-          <a class="pill" href="/about/">About</a>
-          <a class="pill" href="/contact/">Contact</a>
-        </nav>
-      </header>
+      <div id="topbar" data-hint="contact"></div>
 
-      <section class="hero">
-        <h1>Contact</h1>
-        <p>Best way to reach me:</p>
+      <!-- Hero -->
+      <section class="hero hero-landing">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>Contact</h1>
+            <p>Best way to reach me is email. Socials are fine too.</p>
+          </div>
+
+          <div class="hero-side">
+            <div class="glass">
+              <div class="kicker">Preferred</div>
+              <div class="quote">Email for anything important.</div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <!-- Contact Links -->
       <section class="section">
-        <div class="card">
-          <div class="card-top">
-            <h3 class="card-title">Email</h3>
-            <span class="badge">preferred</span>
-          </div>
-          <p class="card-desc">
-            <a href="mailto:dev@buk1t.com">dev@buk1t.com</a>
-          </p>
+        <div class="section-head">
+          <h2>Ways to reach me</h2>
+          <div class="meta">pick your platform</div>
+        </div>
+
+        <div class="grid">
+          <!-- Email (primary) -->
+          <a class="card span-12 contact-primary" href="mailto:dev@buk1t.com">
+            <div class="card-top">
+              <h3 class="card-title">Email</h3>
+              <span class="badge">preferred</span>
+            </div>
+            <p class="card-desc">dev@buk1t.com</p>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            class="card span-6"
+            href="https://github.com/buk1t"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="card-top">
+              <h3 class="card-title">GitHub</h3>
+              <span class="badge">code</span>
+            </div>
+            <p class="card-desc">github.com/buk1t</p>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            class="card span-6"
+            href="https://instagram.com/_buk1t"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="card-top">
+              <h3 class="card-title">Instagram</h3>
+              <span class="badge">social</span>
+            </div>
+            <p class="card-desc">@_buk1t</p>
+          </a>
+
+          <!-- X -->
+          <a
+            class="card span-6"
+            href="https://x.com/_buk1t"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="card-top">
+              <h3 class="card-title">X</h3>
+              <span class="badge">social</span>
+            </div>
+            <p class="card-desc">@buk1t</p>
+          </a>
         </div>
       </section>
 
@@ -44,6 +95,6 @@
       </footer>
     </div>
 
-    <script type="module" src="/js/pages/contact.js"></script>
+    <script type="module" src="/js/core/boot.js"></script>
   </body>
 </html>

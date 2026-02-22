@@ -82,6 +82,12 @@ a:hover {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
+/* active nav pill */
+.pill.is-active {
+  border-color: rgba(120, 120, 255, 0.42);
+  background: rgba(120, 120, 255, 0.14);
+}
+
 .pill:hover {
   border-color: var(--stroke2);
   text-decoration: none;
@@ -328,4 +334,14 @@ a:hover {
 
 #featured-grid .card-desc {
   font-size: 13px;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-primary {
+  border-color: rgba(120, 120, 255, 0.35);
+  background: rgba(120, 120, 255, 0.1);
 }

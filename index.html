@@ -9,17 +9,7 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="topbar">
-        <a class="brand" href="/">
-          <span class="name">buk1t</span>
-          <span class="hint" id="tagline">a personal internet system</span>
-        </a>
-        <nav class="nav">
-          <a class="pill" href="/apps/">Apps</a>
-          <a class="pill" href="/about/">About</a>
-          <a class="pill" href="/contact/">Contact</a>
-        </nav>
-      </header>
+      <div id="topbar" data-tagline="true" data-hint="home"></div>
 
       <!-- Landing hero -->
       <section class="hero hero-landing">
@@ -64,9 +54,10 @@
           <div class="meta">Right now</div>
         </div>
 
-        <div class="grid" id="now-grid"></div>
-        &nbsp;
-        <div class="grid" id="future-grid"></div>
+        <div class="stack">
+          <div class="grid" id="now-grid"></div>
+          <div class="grid" id="future-grid"></div>
+        </div>
 
         <div
           class="notice"
@@ -82,5 +73,6 @@
     </div>
 
     <script type="module" src="./js/pages/main.js"></script>
+    <script type="module" src="./js/core/boot.js"></script>
   </body>
 </html>
