@@ -4,20 +4,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>buk1t • status</title>
-    <meta name="description" content="Status of buk1t services." />
+    <meta name="description" content="Live status for buk1t services." />
     <link rel="stylesheet" href="/css/app.css" />
   </head>
   <body>
     <div class="wrap">
       <div id="topbar" data-hint="status"></div>
 
-      <section class="hero">
-        <h1>Status</h1>
-        <p>Lightweight status summary. (Optional.)</p>
+      <section class="hero hero-landing">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>Status</h1>
+            <p id="subtitle">Checking services…</p>
+
+            <div class="cta-row">
+              <a class="btn" href="/">Homepage</a>
+              <a class="btn primary" id="reportBtn" href="#">Report an issue</a>
+            </div>
+
+            <div class="hero-meta">
+              <span class="meta" id="meta">—</span>
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <div class="glass">
+              <div class="kicker">Summary</div>
+              <div class="quote" id="summary">—</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section">
-        <div class="notice" id="status-box">Loading…</div>
+        <div class="section-head">
+          <h2>Checks</h2>
+          <div class="meta">live-ish</div>
+        </div>
+
+        <div class="grid" id="checks" aria-live="polite"></div>
+
+        <noscript>
+          <div class="notice" style="margin-top: 12px">
+            JavaScript is required to run live checks. If something seems down,
+            email <a href="mailto:dev@buk1t.com">dev@buk1t.com</a>.
+          </div>
+        </noscript>
+
+        <div
+          class="notice"
+          id="notice"
+          style="display: none; margin-top: 12px"
+        ></div>
       </section>
 
       <footer class="footer">
