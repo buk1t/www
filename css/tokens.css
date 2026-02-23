@@ -14,6 +14,7 @@
   --radius: 18px;
   --shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
 
+  --favicon: #606060;
   --max: 980px;
 
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
